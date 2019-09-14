@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';// provider gives the state
-import { createStore } from 'redux';// is a object with your data in it
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import rootReducer from './reducers';
 
 import App from './components/app';

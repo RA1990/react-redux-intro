@@ -1,5 +1,5 @@
 import  React, { Component } from 'react';
-import { connect } from 'react-redux';// is used to connect component to reduxStore
+import { connect } from 'react-redux';
 import { tick } from '../actions';
 
 
@@ -19,7 +19,7 @@ class Clock extends Component {
 
 }
 
-function mapStateToProps(state){ // this adds state to props
+function mapStateToProps(state){
 return {
   time: state.clock.time
   }
@@ -27,4 +27,4 @@ return {
 
 
 
-export default connect(mapStateToProps,{ tick: tick })(Clock);//returns a function with a added method
+export default connect(mapStateToProps,{ tick: tick })(Clock);
